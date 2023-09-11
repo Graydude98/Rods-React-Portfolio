@@ -1,0 +1,271 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  
+  
+  }
+  
+  a {
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #ff0000;
+  }
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+  
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0px;
+    background-image: url(../src/assets/02-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #9CD9D9;
+  }
+  
+  .background-tint {
+    background-color: #78d685;
+    background-blend-mode: multiply;
+  }
+  
+  h1 {
+    width: 350px; 
+    height: 50px; 
+    margin:3px; 
+    margin-left: 5%;
+    color: #ffffff;
+    font-size: 200%;
+  }
+  
+  .title {
+    filter: drop-shadow(0 0 5px #646cffaa);
+  }
+  
+  nav{
+    display: flex;
+    filter: drop-shadow(0 0 5px #104218aa);
+  } 
+  
+  nav ul{
+    display:flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+    list-style: none;
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  nav a{
+    color:#ffffff;
+    font-weight: 100;
+    text-decoration: none;
+    border-bottom: 3px solid;
+  }
+  
+  /* nav bar underline style !DO NOT TOUCH REN!*/
+  nav a:visited{
+    color: #9CD9D9;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  
+  
+  
+  /* MAIN=======================================================================================================
+  ============================================================================================================== */
+  
+  /*  */
+  section{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 2px;
+    padding-right: 15px;
+  
+  }
+  
+  .about-me{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 70%;
+    flex-wrap: wrap;
+  }
+  
+  p{
+    margin-top:15px;
+    margin-bottom: 15px;
+    color: #435773;
+    padding-right: 10%;
+  
+  }
+  
+  
+  
+  
+  h3{
+    justify-content: left;
+    flex-basis: 20%;
+    border-right: 3px solid #445877;
+    display: block;
+    text-align: right;
+    font-size: 200% ;
+    margin-right: 30px;
+    margin: 1% 2%;
+    padding-right: 15px;
+    line-height: 1.1;
+    color:#435773;
+  
+  }
+  
+  
+  /* img styles================================================ */
+  .container{
+    display:flex;
+    flex-direction:row;
+    flex: 0 0 70%;
+    flex-wrap: wrap;
+  
+  }
+  
+  
+  .card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  
+  .code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px;
+    margin-left: -25px;
+    background-color: #9CD9D9;
+    color: #30353D;
+    outline: 2px dashed var(--gin);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  h4{
+    font-size: 23px;
+  }
+  
+  
+  .workOne{
+    background-image: url("./assets/Apperitevo-screen.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .workTwo{
+    background-image: url("./assets/An-App-Called-Quest-cap.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .workThree{
+    background-image: url("./assets/02-portfolio-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .workFour{
+    background-image: url("./assets/02-portfolio-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .workFive{
+    background-image: url("./assets/02-run-buddy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .flexitem {
+    max-height: 160px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-basis: calc(50% - 0em);
+    border-style: solid;
+    border-color: #717878;
+    text-decoration: none;
+    /* background-size: 150%; */
+    
+  }
+  
+  
+  .box{
+    position: relative;
+  }
+  
+  
+  
+  
+  article{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 2px;
+    padding-right: 15px;
+  
+  }
